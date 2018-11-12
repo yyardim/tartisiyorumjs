@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  title = 'TartisiYorum';
+  title = 'TartisiYorum.com is back on BlockChain!';
 }

@@ -1,30 +1,4 @@
-<!-- By default, Angular Material applies no global styles to native elements. -->
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <button mat-button>Tartisi</button>
-    <button mat-button>Yorum</button>
-    <mat-icon class="toolbar-icon">show_chart</mat-icon>
-    <span class="toolbar-spacer"></span>
-    <mat-icon class="toolbar-icon">attach_money</mat-icon>
-    <mat-icon class="toolbar-icon">people</mat-icon>
-    <mat-icon class="toolbar-icon">settings</mat-icon>
-    <mat-icon class="toolbar-icon" [matMenuTriggerFor]="menu">menu</mat-icon>
-    <mat-menu #menu="matMenu">
-      <button mat-menu-item>
-        <mat-icon>face</mat-icon>
-        <span>Profile</span>
-      </button>
-      <button mat-menu-item>
-        <mat-icon>edit</mat-icon>
-        <span>Edit</span>
-      </button>
-      <button mat-menu-item disabled>
-        <mat-icon>toggle_on</mat-icon>
-        <span>Sign out</span>
-      </button>
-    </mat-menu>
-  </mat-toolbar-row>
-</mat-toolbar>
+<app-mat-header></app-mat-header>
 
 <!-- Applying the mat-tyography class adds styles for native elements. -->
 <section class="mat-typography">

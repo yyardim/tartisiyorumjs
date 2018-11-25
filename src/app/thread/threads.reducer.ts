@@ -1,5 +1,6 @@
-import { Thread } from './thread.model';
 import { Action } from 'redux';
+import { Thread } from './thread.model';
+import { Article } from '../article/article.model';
 import * as ThreadActions from './thread.actions';
 
 export interface ThreadsEntities {
@@ -20,6 +21,8 @@ const initialState: ThreadsState = {
 
 export const ThreadsReducer = (state: ThreadsState = initialState, action: Action): ThreadsState => {
   switch (action.type) {
+
+    // Add a new Thread to the list of entities
     case ThreadActions.ADD_THREAD: {
       const thread = (<ThreadActions.AddThreadAction>action).thread;
 

@@ -15,7 +15,7 @@ const initialState: AuthorsState = {
   currentAuthor: null
 };
 
-export const AuthorsReducer = (state: AuthorsState, action: Action): AuthorsState => {
+export const AuthorsReducer = (state: AuthorsState = initialState, action: Action): AuthorsState => {
   switch (action.type) {
     case AuthorActions.SET_CURRENT_AUTHOR:
       const author: Author = (<AuthorActions.SetCurrentAuthorAction>action).author;

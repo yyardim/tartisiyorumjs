@@ -1,7 +1,8 @@
-import {Author} from '../author/author.model';
-import {Thread} from '../thread/thread.model';
+import { Base } from '../core/base.model';
+import { Author } from '../author/author.model';
+import { Thread } from '../thread/thread.model';
 
-export interface Article {
+export interface Article extends Base {
   articleId: string;
   parentArticleId: string;
   author: Author;
